@@ -361,38 +361,34 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 
     
     </br>
-
 <li><i> 14.  Symplectic rational G-surfaces and equivariant symplectic cones. </i>
-  <script language="javaScript">
-function showHideText2()
-{
-if (document.getElementById("div_text14").className == "div_hide")
-{
-document.getElementById("div_text14").className = "div_show";
-document.getElementById("my_text14").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text14").className = "div_hide";
-document.getElementById("my_text14").innerText = "[+]";
-}
-}
-</script>
 
 </br><ul><b>J. Differ. Geom.,</b> 119 (2) 221 - 260, October 2021.
-<a href="https://arxiv.org/abs/1708.07500">arXiv:1708.07500</a>. </em> <a href="SymplecticCremonaMaps0126.pdf"> Slides (IBS-Pohang)</a> (with Weimin Chen, Tian-Jun Li) 
-  <a id="my_text14" href="javaScript:showHideText14()">[+]</a></ul>
+<a href="https://arxiv.org/abs/1708.07500">arXiv:1708.07500</a>. </em> <a href="#" onclick="toggle('div_text14', 'my_text14')">[+]</a> <a href="SymplecticCremonaMaps0126.pdf"> Slides (IBS-Pohang)</a></ul>
 
-<ul>
-<div id="div_text14" class="div_hide">
+<ul id="div_text14" style="display:none">
 <span style="font-size:0.99em">We give characterizations of a finite group G acting symplectically on 
   a rational surface (\CP^2 blown up at two or more points). In particular, we obtain a symplectic 
   version of the dichotomy of G-conic bundles versus G-del Pezzo surfaces for the corresponding 
   G-rational surfaces, analogous to a classical result in algebraic geometry.</span>
-
-</div>
 </ul>
+
+</ul>
+
+<script>
+function toggle(divId, linkId) {
+  var divElement = document.getElementById(divId);
+  var linkElement = document.getElementById(linkId);
+  
+  if (divElement.style.display == 'none') {
+    divElement.style.display = 'block';
+    linkElement.innerHTML = '[-]';
+  } else {
+    divElement.style.display = 'none';
+    linkElement.innerHTML = '[+]';
+  }
+}
+</script>
 
 
 </br>
