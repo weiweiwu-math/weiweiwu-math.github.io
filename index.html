@@ -29,259 +29,27 @@ p.c {
 }
 </style>
 
-<style>
-  .visi1 { visibility:"visible" }
-  .visi2 { visibility:"hidden" }
-  .disp1 { display:"block" }
-  .disp2 { display:"none" }
+	<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            // 确保所有 .abstract 默认隐藏
+            let abstracts = document.querySelectorAll(".abstract");
+            abstracts.forEach(abstract => {
+                abstract.style.display = "none";
+		abstract.style.fontSize = "14px"; 
+        abstract.style.color = "gray"; 
+        abstract.style.fontFamily = "Arial, sans-serif";
+            });
+        });
 
-.div_show
-{
-display:block;
-margin:5px;
-padding:8px;
-background:#EFF5E0;
-border:solid 1px #c3c3c3;
-}
-.div_hide
-{
-display:none;
-}
-</style>
-<script language="javaScript">
-function showHideText3()
-{
-if (document.getElementById("div_text3").className == "div_hide")
-{
-document.getElementById("div_text3").className = "div_show";
-document.getElementById("my_text3").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text3").className = "div_hide";
-document.getElementById("my_text3").innerText = "[+]";
-}
-}
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "none") {
+                abstract.style.display = "block";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
 </script>
-
-<script language="javaScript">
-function showHideText4()
-{
-if (document.getElementById("div_text4").className == "div_hide")
-{
-document.getElementById("div_text4").className = "div_show";
-document.getElementById("my_text4").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text4").className = "div_hide";
-document.getElementById("my_text4").innerText = "[+]";
-}
-}
-</script>
-
-<script language="javaScript">
-function showHideText5()
-{
-if (document.getElementById("div_text5").className == "div_hide")
-{
-document.getElementById("div_text5").className = "div_show";
-document.getElementById("my_text5").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text5").className = "div_hide";
-document.getElementById("my_text5").innerText = "[+]";
-}
-}
-</script>
-
-<script language="javaScript">
-function showHideText6()
-{
-if (document.getElementById("div_text6").className == "div_hide")
-{
-document.getElementById("div_text6").className = "div_show";
-document.getElementById("my_text6").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text6").className = "div_hide";
-document.getElementById("my_text6").innerText = "[+]";
-}
-}
-</script>
-
-<script language="javaScript">
-function showHideText7()
-{
-if (document.getElementById("div_text7").className == "div_hide")
-{
-document.getElementById("div_text7").className = "div_show";
-document.getElementById("my_text7").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text7").className = "div_hide";
-document.getElementById("my_text7").innerText = "[+]";
-}
-}
-</script>
-
-<script language="javaScript">
-function showHideText8()
-{
-if (document.getElementById("div_text8").className == "div_hide")
-{
-document.getElementById("div_text8").className = "div_show";
-document.getElementById("my_text8").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text8").className = "div_hide";
-document.getElementById("my_text8").innerText = "[+]";
-}
-}
-</script>
-
-<script language="javaScript">
-function showHideText9()
-{
-if (document.getElementById("div_text9").className == "div_hide")
-{
-document.getElementById("div_text9").className = "div_show";
-document.getElementById("my_text9").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text9").className = "div_hide";
-document.getElementById("my_text9").innerText = "[+]";
-}
-}
-</script>
-
-<script language="javaScript">
-function showHideText10()
-{
-if (document.getElementById("div_text10").className == "div_hide")
-{
-document.getElementById("div_text10").className = "div_show";
-document.getElementById("my_text10").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text10").className = "div_hide";
-document.getElementById("my_text10").innerText = "[+]";
-}
-}
-</script>
-
-
-<script language="javaScript">
-function showHideText11()
-{
-if (document.getElementById("div_text11").className == "div_hide")
-{
-document.getElementById("div_text11").className = "div_show";
-document.getElementById("my_text11").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text11").className = "div_hide";
-document.getElementById("my_text11").innerText = "[+]";
-}
-}
-</script>
-
-    <script language="javaScript">
-function showHideText12()
-{
-if (document.getElementById("div_text12").className == "div_hide")
-{
-document.getElementById("div_text12").className = "div_show";
-document.getElementById("my_text12").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text12").className = "div_hide";
-document.getElementById("my_text12").innerText = "[+]";
-}
-}
-</script>
-  
-<script language="javaScript">
-function showHideText13()
-{
-if (document.getElementById("div_text13").className == "div_hide")
-{
-document.getElementById("div_text13").className = "div_show";
-document.getElementById("my_text13").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text13").className = "div_hide";
-document.getElementById("my_text13").innerText = "[+]";
-}
-}
-</script>
-  
-<script language="javaScript">
-function showHideText14()
-{
-if (document.getElementById("div_text14").className == "div_hide")
-{
-document.getElementById("div_text14").className = "div_show";
-document.getElementById("my_text14").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text14").className = "div_hide";
-document.getElementById("my_text14").innerText = "[+]";
-}
-}
-</script>
-    
-      
-<script language="javaScript">
-function showHideText15()
-{
-if (document.getElementById("div_text15").className == "div_hide")
-{
-document.getElementById("div_text15").className = "div_show";
-document.getElementById("my_text15").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text15").className = "div_hide";
-document.getElementById("my_text15").innerText = "[+]";
-}
-}
-</script>
-
-<!--
-function toggle(abs_tr) {
-  var e = document.getElementById('abs-'+abs_tr);
-  document.status = e.style.display;
-  if(e.style.display == 'none') {
-    e.style.display = 'table-row';
-  } else {
-    e.style.display = 'none';
-  }
-}
-//-->
 
 </head><body background="Jianyu%20Chen%27s%20Homepage_files/Roessler_attractor.png">
 
@@ -375,42 +143,12 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 
 </ul>
 
-<script>
-function toggle(divId, linkId) {
-  var divElement = document.getElementById(divId);
-  var linkElement = document.getElementById(linkId);
-  
-  if (divElement.style.display == 'none') {
-    divElement.style.display = 'block';
-    linkElement.innerHTML = '[-]';
-  } else {
-    divElement.style.display = 'none';
-    linkElement.innerHTML = '[+]';
-  }
-}
-</script>
+
 
 
 </br>
 
 <li><i> 13.  Symplectic −2 spheres and the symplectomorphism group of small rational 4-manifolds. </i>
-  <script language="javaScript">
-function showHideText2()
-{
-if (document.getElementById("div_text13").className == "div_hide")
-{
-document.getElementById("div_text13").className = "div_show";
-document.getElementById("my_text13").innerText = "[-]";
-}
-else
-{
-
-document.getElementById("div_text13").className = "div_hide";
-document.getElementById("my_text13").innerText = "[+]";
-}
-}
-</script>
-
 </br><ul><b>Trans. Amer. Math. Soc.,</b> 375 (2022), 1357-1410.    
 <a href="https://arxiv.org/abs/1611.07436">arXiv:1611.07436</a>. </em>(with Jun Li, Tian-Jun Li) 
   <a id="my_text13" href="javaScript:showHideText13()">[+]</a></ul>
