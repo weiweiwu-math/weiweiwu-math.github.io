@@ -38,28 +38,39 @@ li{
 }
 </style>
 
+<style>
+.abstract {
+    display: none; /* 默认隐藏 */
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #6cbf6c; /* 浅绿色字体 */
+    border: 1px solid #ccc; /* 浅灰色边框 */
+    background-color: #fff9e6; /* 浅黄色背景 */
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+</style>
 
-	<script>
-    document.addEventListener("DOMContentLoaded", function() {
-            // 确保所有 .abstract 默认隐藏
-            let abstracts = document.querySelectorAll(".abstract");
-            abstracts.forEach(abstract => {
-                abstract.style.display = "none";
-		abstract.style.fontSize = "14px"; 
-        abstract.style.color = "gray"; 
-        abstract.style.fontFamily = "Arial, sans-serif";
-            });
-        });
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 初始时全部隐藏
+    let abstracts = document.querySelectorAll(".abstract");
+    abstracts.forEach(abstract => {
+        abstract.style.display = "none";
+    });
+});
 
-        function toggleAbstract(id) {
-            var abstract = document.getElementById(id);
-            if (abstract.style.display === "none") {
-                abstract.style.display = "block";
-            } else {
-                abstract.style.display = "none";
-            }
-        }
+function toggleAbstract(id) {
+    var abstract = document.getElementById(id);
+    if (abstract.style.display === "none" || abstract.style.display === "") {
+        abstract.style.display = "block";
+    } else {
+        abstract.style.display = "none";
+    }
+}
 </script>
+
 
 </head><body background="Jianyu%20Chen%27s%20Homepage_files/Roessler_attractor.png">
 
@@ -143,33 +154,40 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 </br>
 	
 
+<style>
+.journal-title {
+    font-weight: normal; /* 强制取消加粗 */
+}
+</style>
 
-<li><i> 14.  <span class="clickable" onclick="toggleAbstract('abstract_Gsurface')">Symplectic rational G-surfaces and equivariant symplectic cones.</span> </i></li>
-<ul><li><b>J. Differ. Geom.,</b> 119 (2) 221 - 260, October 2021.
-<em><a href="https://arxiv.org/abs/1708.07500">arXiv:1708.07500</a>. </em> 
- <a href="SymplecticCremonaMaps0126.pdf"> Slides (IBS-Pohang)</a> </li> 
-    <li id="abstract_Gsurface" class="abstract">We give characterizations of a finite group G acting symplectically on 
-  a rational surface (\CP^2 blown up at two or more points). In particular, we obtain a symplectic 
-  version of the dichotomy of G-conic bundles versus G-del Pezzo surfaces for the corresponding 
-  G-rational surfaces, analogous to a classical result in algebraic geometry.</li></ul>
+<!-- 第14点重写 -->
+<li><i>14. <span class="clickable" onclick="toggleAbstract('abstract_Gsurface')">Symplectic rational G-surfaces and equivariant symplectic cones.</span></i></li>
+<ul>
+  <li>
+    <a href="https://projecteuclid.org/journals/journal-of-differential-geometry/volume-119/issue-2/Symplectic-rational-G-surfaces-and-equivariant-symplectic-cones/10.4310/jdg/1632506334.short" class="journal-title">J. Differ. Geom.</a>, 119 (2) 221-260, October 2021.
+    <em><a href="https://arxiv.org/abs/1708.07500">arXiv:1708.07500</a>.</em>
+    <a href="SymplecticCremonaMaps0126.pdf">Slides (IBS-Pohang)</a>
+  </li>
+  <li id="abstract_Gsurface" class="abstract">We give characterizations of a finite group G acting symplectically on a rational surface (\(\mathbb{CP}^2\) blown up at two or more points). In particular, we obtain a symplectic version of the dichotomy of G-conic bundles versus G-del Pezzo surfaces for the corresponding G-rational surfaces, analogous to a classical result in algebraic geometry.</li>
+</ul>
+<br/>
 
-</br>
-
-<li><i> 13.  <span class="clickable" onclick="toggleAbstract('abstract_II')">Symplectic −2 spheres and the symplectomorphism group of small rational 4-manifolds II. </span> </i></li>
-<ul><li><b>Trans. Amer. Math. Soc.,</b> 375 (2022), 1357-1410.
-<em><a href="https://arxiv.org/abs/1911.11073">	arXiv:1911.11073</a>. </em> (with Jun Li, Tian-Jun Li)
- </li> 
-    <li id="abstract_II" class="abstract">We study both connected components and fundamental groups of the symplectomorphism groups for small 
-  rational surfaces.  Especially, when the rational surface has Euler characteristic eight, we computed the symplectic 
-  mapping class groups for all symplectic forms, and related them to braid groups on a sphere.</li></ul>
-
-    
-</br>
+<!-- 第13点重写 -->
+<li><i>13. <span class="clickable" onclick="toggleAbstract('abstract_II')">Symplectic −2 spheres and the symplectomorphism group of small rational 4-manifolds II.</span></i></li>
+<ul>
+  <li>
+    <a href="https://www.ams.org/journals/tran/2022-375-02/S0002-9947-2021-08517-7/home.html" class="journal-title">Trans. Amer. Math. Soc.</a>, 375 (2022), 1357-1410.
+    <em><a href="https://arxiv.org/abs/1911.11073">arXiv:1911.11073</a>.</em> (with Jun Li, Tian-Jun Li)
+  </li>
+  <li id="abstract_II" class="abstract">We study both connected components and fundamental groups of the symplectomorphism groups for small rational surfaces. Especially, when the rational surface has Euler characteristic eight, we computed the symplectic mapping class groups for all symplectic forms, and related them to braid groups on a sphere.</li>
+</ul>
+<br/>
 
 <!-- 第12点重写 -->
 <li><i>12. <span class="clickable" onclick="toggleAbstract('abstract_12')">Spherical twists and Lagrangian spherical manifolds</span></i></li>
 <ul>
-  <li><b><a href="https://link.springer.com/article/10.1007/s00029-019-0515-6">Selecta Math. (N.S.)</a></b> 25, 68 (2019), 
+  <li>
+    <a href="https://link.springer.com/article/10.1007/s00029-019-0515-6" class="journal-title">Selecta Math. (N.S.)</a> 25, 68 (2019), 
     <em><a href="https://arxiv.org/abs/1810.06533">arXiv:1810.06533</a></em>. (with Cheuk-Yu Mak)
   </li>
   <li id="abstract_12" class="abstract">We study Dehn twists along Lagrangian submanifolds that are finite quotients of spheres. 
@@ -182,7 +200,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第11点重写 -->
 <li><i>11. <span class="clickable" onclick="toggleAbstract('abstract_11')">Dehn twists exact sequences through Lagrangian cobordism.</span></i></li>
 <ul>
-  <li><b><a href="https://www.cambridge.org/core/journals/compositio-mathematica/article/dehn-twist-exact-sequences-through-lagrangian-cobordism/CDD0773A40B992877DF6C2D076016EF2">Compositio Math.</a></b> 154(12), 2485-2533.  
+  <li>
+    <a href="https://www.cambridge.org/core/journals/compositio-mathematica/article/dehn-twist-exact-sequences-through-lagrangian-cobordism/CDD0773A40B992877DF6C2D076016EF2" class="journal-title">Compositio Math.</a> 154(12), 2485-2533.  
     <a href="http://arxiv.org/abs/1509.08028">arXiv:1509.08028</a>, 
     <a href="TalkIAS.pdf">Slides (IAS)</a>. (with Cheuk-Yu Mak)
   </li>
@@ -198,7 +217,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第10点重写 -->
 <li><i>10. <span class="clickable" onclick="toggleAbstract('abstract_10')">Gauged Floer homology and spectral invariants.</span></i></li>
 <ul>
-  <li><b><a href="https://academic.oup.com/imrn/article-abstract/2018/13/3959/3054973">Int. Math. Res. Not.</a></b>, 13 (2018), 3959–4021, 
+  <li>
+    <a href="https://academic.oup.com/imrn/article-abstract/2018/13/3959/3054973" class="journal-title">Int. Math. Res. Not.</a>, 13 (2018), 3959–4021, 
     <a href="http://arxiv.org/abs/1506.03349">arXiv:1506.03349</a>. (with Guangbo Xu)
   </li>
   <li id="abstract_10" class="abstract">We established spectral theory in gauged Floer homology, defining Entov-Polterovich's 
@@ -211,7 +231,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第9点重写 -->
 <li><i>9. <span class="clickable" onclick="toggleAbstract('abstract_9')">Equivariant split generation and mirror symmetry of special isogenous tori.</span></i></li>
 <ul>
-  <li><b><a href="http://www.sciencedirect.com/science/article/pii/S0001870817303092?via%3Dihub">Adv. Math.</a></b>, 323 (2018), 279–325. 
+  <li>
+    <a href="http://www.sciencedirect.com/science/article/pii/S0001870817303092?via%3Dihub" class="journal-title">Adv. Math.</a>, 323 (2018), 279–325. 
     <a href="http://arxiv.org/abs/1501.06257">arXiv:1501.06257</a>,  
     <a href="CUHKTalk.pdf">Slides (CUHK)</a>.
   </li>
@@ -225,7 +246,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第8点重写 -->
 <li><i>8. <span class="clickable" onclick="toggleAbstract('abstract_8')">Stability and existence of surfaces in symplectic 4-manifolds with b+=1</span></i></li>
 <ul>
-  <li><b><a href="https://www.degruyterbrill.com/document/doi/10.1515/crelle-2015-0083">J. Reine Angew. Math. (Crelle's Journal)</a>,</b> 2018 (742), 115-155. 
+  <li>
+    <a href="https://www.degruyterbrill.com/document/doi/10.1515/crelle-2015-0083" class="journal-title">J. Reine Angew. Math. (Crelle's Journal)</a>, 2018 (742), 115-155. 
     <a href="http://arxiv.org/abs/1407.1089">arXiv:1407.1089</a>,
     <a href="stabiliyTalk_Umass.pdf">Slides (UMass)</a>. (with J. Dorfmeister and T.-J. Li)
   </li>
@@ -236,7 +258,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第7点重写 -->
 <li><i>7. <span class="clickable" onclick="toggleAbstract('abstract_7')">Symplectomorphism groups of non-compact manifolds, orbifold balls, and a space of Lagrangians</span></i></li>
 <ul>
-  <li><b><a href="https://archive.intlpress.com/site/pub/files/_fulltext/journals/jsg/2016/0014/0001/JSG-2016-0014-0001-a008.pdf">J. Symp. Geom.</a>,</b> 14 (2016), no. 1, 203–226. 
+  <li>
+    <a href="https://archive.intlpress.com/site/pub/files/_fulltext/journals/jsg/2016/0014/0001/JSG-2016-0014-0001-a008.pdf" class="journal-title">J. Symp. Geom.</a>, 14 (2016), no. 1, 203–226. 
     <a href="http://arxiv.org/abs/1305.7291">arXiv:1305.7291</a>. (with R. Hind and M. Pinsonnault)
   </li>
   <li id="abstract_7" class="abstract">We proved that the space of Lagrangian $RP^2$ in $T^*RP^2$ is contractible – a long-unresolved result. Our method provides a streamlined proof for Hind's $S^2$ case, and reveals connections to: (1) Homotopy types of symplectomorphism groups for non-compact manifolds with concave ends; (2) Spaces of orbifold embeddings.</li>
@@ -246,7 +269,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第6点重写 -->
 <li><i>6. <span class="clickable" onclick="toggleAbstract('abstract_6')">The symplectic mapping class group of $\mathbb{CP}^2\#n\overline{\mathbb{CP}^2}$, $n\leq 4$</span></i></li>
 <ul>
-  <li><b><a href="http://projecteuclid.org/euclid.mmj/1434731926">Michigan Math. J.</a>,</b> 64 (2015), 319-333. 
+  <li>
+    <a href="http://projecteuclid.org/euclid.mmj/1434731926" class="journal-title">Michigan Math. J.</a>, 64 (2015), 319-333. 
     <a href="http://arxiv.org/abs/1310.7329">arXiv:1310.7329</a>. (with J. Li and T.-J. Li)
   </li>
   <li id="abstract_6" class="abstract">We established the connectedness of symplectomorphism groups for small rational surfaces, resolving fundamental structural questions in low-dimensional symplectic topology.</li>
@@ -256,7 +280,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第5点重写 -->
 <li><i>5. <span class="clickable" onclick="toggleAbstract('abstract_5')">On an exotic Lagrangian torus in $\mathbb{CP}^2$</span></i></li>
 <ul>
-  <li><b><a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9878764&fileId=S0010437X14007945">Compositio Math.</a></b> 151 (2015), 1372-1394. 
+  <li>
+    <a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9878764&fileId=S0010437X14007945" class="journal-title">Compositio Math.</a> 151 (2015), 1372-1394. 
     <a href="http://arxiv.org/abs/1201.2446">arXiv:1201.2446</a>.
   </li>
   <li id="abstract_5" class="abstract">Studying a semi-toric system with $RP^2$-singularity, we discovered a superheavy fiber via Fukaya-Oh-Ohta-Ono's framework – negatively answering Entov-Polterovich's question on whether $RP^2$ is a stem in $\mathbb{CP}^2$. Key innovation: Novel method for counting holomorphic disks with Lagrangian boundaries in singular toric systems.</li>
@@ -266,7 +291,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第4点重写 -->
 <li><i>4. <span class="clickable" onclick="toggleAbstract('abstract_4')">Exact Lagrangians in $A_n$-singularities</span></i></li>
 <ul>
-  <li><b><a href="http://link.springer.com/article/10.1007/s00208-013-0993-3">Math. Ann.</a>,</b> 359 (2014), no. 1-2, 153-168. 
+  <li>
+    <a href="http://link.springer.com/article/10.1007/s00208-013-0993-3" class="journal-title">Math. Ann.</a>, 359 (2014), no. 1-2, 153-168. 
     <a href="http://arxiv.org/abs/1302.1598">arXiv:1302.1598</a>.
   </li>
   <li id="abstract_4" class="abstract">We resolved two longstanding open problems: (1) Isotopy classification of compactly supported symplectomorphisms; (2) Isotopy classification of Lagrangian spheres in $A_n$-surface Milnor fibers. Core innovation: Construction of ball-swapping symplectomorphisms as symplectic analogues of algebraic monodromy maps.</li>
@@ -276,7 +302,8 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第3点重写 -->
 <li><i>3. <span class="clickable" onclick="toggleAbstract('abstract_3')">Spherical Lagrangians via ball packings and symplectic cutting</span></i></li>
 <ul>
-  <li><b><a href="http://link.springer.com/article/10.1007/s00029-013-0120-z">Selecta Math. (N.S.)</a>,</b> 20 (2014), no. 1, 261-283. 
+  <li>
+    <a href="http://link.springer.com/article/10.1007/s00029-013-0120-z" class="journal-title">Selecta Math. (N.S.)</a>, 20 (2014), no. 1, 261-283. 
     <a href="http://arxiv.org/abs/1211.5952">arXiv:1211.5952</a>. (with M. S. Borman and T.-J. Li)
   </li>
   <li id="abstract_3" class="abstract">We resolved open questions on the uniqueness of Lagrangian submanifolds: (1) Smooth/symplectic uniqueness of Lagrangian $S^2$ and $RP^2$ embeddings in 4D rational/ruled manifolds; (2) Constructed smooth knotted $RP^2$-embeddings under varying symplectic forms.</li>
@@ -286,20 +313,21 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <!-- 第2点重写 -->
 <li><i>2. <span class="clickable" onclick="toggleAbstract('abstract_2')">Lagrangian spheres, symplectic surfaces and symplectic mapping class groups</span></i></li>
 <ul>
-  <li><b><a href="http://www.msp.warwick.ac.uk/gt/2012/16-02/p023.xhtml">Geom. & Topo.</a>,</b> 16 (2012), 1121-1169. 
+  <li>
+    <a href="http://www.msp.warwick.ac.uk/gt/2012/16-02/p023.xhtml" class="journal-title">Geom. & Topo.</a>, 16 (2012), 1121-1169. 
     <a href="http://arxiv.org/abs/1012.4146">arXiv:1012.4146</a>. (with T.-J. Li)
   </li>
   <li id="abstract_2" class="abstract">Key advances in Lagrangian spheres: (1) Complete homology classification for $S^2$ embeddings in rational/ruled surfaces; (2) Factorization of symplectomorphism actions via Lagrangian Dehn twists; (3) Hamiltonian uniqueness for $S^2$ in rational surfaces with χ&lt;8; (4) New proofs for Lagrangian embeddings in $S^2\times S^2$ and $\mathbb{CP}^2$.</li>
 </ul>
 <br/>
 
-<!-- 修改后 -->
+<!-- 第1点重写 -->
 <li>
   <i>1. <span class="clickable" onclick="toggleAbstract('abstract_1')">Note on a theorem of Bangert</span></i>
 </li>
 <ul>
   <li>
-    <b><a href="http://link.springer.com/article/10.1007%2Fs10114-012-9408-8" target="_blank">Acta Math. Sin. (Engl. Ser.)</a>,</b> 
+    <a href="http://link.springer.com/article/10.1007%2Fs10114-012-9408-8" target="_blank" class="journal-title">Acta Math. Sin. (Engl. Ser.)</a>, 
     28 (2012), no. 1, 121-132.
     <a href="http://arxiv.org/abs/1509.08128">arXiv:1509.08128</a>. (with T.-J. Li)
   </li>
