@@ -17,8 +17,29 @@ border: #001100;
  */
 
 
-a {
+/* main.css 添加以下内容 */
+a, a:link, a:visited {
+    text-decoration: none !important;
     color: blue;
+}
+
+a:hover {
+    text-decoration: underline !important;
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+/* 增强可点击元素 */
+.clickable {
+    cursor: pointer;
+}
+
+.title-handwritten {
+    font-family: "STWeiti", "Weiti SC", "华文魏体", "STKaiti", "KaiTi", "楷体", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: 0.3px;
 }
 
 body {
