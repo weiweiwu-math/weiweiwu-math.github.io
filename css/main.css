@@ -56,7 +56,7 @@ body {
 
 
 .subtitle {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "华文隶书", "STLiti", serif; /* 华文隶书 + 备选字体 */
     font-style: normal; 
 }
@@ -67,7 +67,7 @@ body {
     border: 1px solid #001100;
     background: #F7F7F7;
     color: #990000;
-    font-size: 19px;
+    font-size: 22px;
     font-family: "华文隶书", "STLiti", serif; /* 华文隶书 + 备选字体 */
     font-style: normal; 
 }
@@ -78,7 +78,7 @@ body {
     border: 1px solid #001100;
     background: #F7F7F7;
     color: #990000;
-    font-size: 19px;
+    font-size: 22px;
     font-family: "华文隶书", "STLiti", serif; /* 华文隶书 + 备选字体 */
     font-style: normal; 
 }
@@ -89,7 +89,7 @@ body {
     border: 1px solid #001100;
     background: #F7F7F7;
     color: #990000;
-    font-size: 19px;
+    font-size: 22px;
     font-family: "华文隶书", "STLiti", serif; /* 华文隶书 + 备选字体 */
     font-style: normal; 
 }
