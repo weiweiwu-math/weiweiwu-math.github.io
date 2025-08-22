@@ -43,6 +43,24 @@ li{
 
 </style>
 
+<style>
+        .boxed-text {
+            display: inline-block;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            padding: 8px 15px;
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .boxed-text:hover {
+            background-color: #e3f2fd;
+            border-color: #2980b9;
+        }
+</style>
 
 	
 <style>
@@ -151,7 +169,7 @@ Here is my <a name="description"><a href="2021CV_1024.pdf">CV</a></a>.
 <li>16.  
   <span class="clickable title-handwritten" onclick="toggleAbstract('abstract_16')">
     Infinite connected components of the space of symplectic forms on ruled surfaces
-  </span> << Click me!
+  </span> <span class="boxed-text"><< Click me!</span> 
 </li>
 
 <ul>
